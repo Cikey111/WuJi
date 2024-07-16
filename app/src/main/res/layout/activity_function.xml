@@ -2,9 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.FunctionActivity">
+
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
@@ -17,5 +19,25 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:menu="@menu/toolbar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <Button
+        android:id="@+id/export"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="导出日志"/>
+    <Button
+        android:id="@+id/remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提醒写日志"/>
+    <Button
+        android:id="@+id/my_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的收藏"/>
+    <Button
+        android:id="@+id/dustbin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="垃圾箱"/>
 
 </LinearLayout>

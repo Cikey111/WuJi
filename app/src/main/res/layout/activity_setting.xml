@@ -1,9 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".view.SettingActivity">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="设置"
+        app:titleCentered="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:menu="@menu/toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <Button
+        android:id="@+id/account_safe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="账号安全"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐私/密码锁"/>
+    <Button
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="主题"/>
+    <Button
+        android:id="@+id/module"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="过客模块"/>
+    <Button
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="地址信息"/>
+    <Button
+        android:id="@+id/cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清除缓存"/>
+    <Button
+        android:id="@+id/opinion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="意见反馈"/>
+
+
+
+
+</LinearLayout>
