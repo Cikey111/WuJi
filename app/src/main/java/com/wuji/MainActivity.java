@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.wuji.view.MineFragment;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                         replaceFragment(PasserFragment.newInstance(null,null));
                         return true;
                     case R.id.mine:
-                        replaceFragment(new SettingsActivity.SettingsFragment());
+                        replaceFragment(MineFragment.newInstance(null,null));
                         return true;
                 }
                 return false;
