@@ -2,117 +2,161 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ffffff"
+    android:background="#00ffffff"
+    android:orientation="vertical"
     android:paddingTop="10dp"
     android:paddingBottom="15dp">
+
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="25dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:background="#01000000"
+        android:orientation="horizontal">
+
         <LinearLayout
             android:id="@+id/wechat"
-            android:orientation="vertical"
-            android:layout_weight="1.0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
             <androidx.cardview.widget.CardView
-                android:src="@drawable/O"
                 android:layout_width="50dp"
-                android:layout_height="50dp"/>
+                android:layout_height="50dp"
+                android:src="@drawable/oooi">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/oooi" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
-                android:text="微信好友"
-
-
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="微信好友" />
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/share_wechat"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_weight="1.0"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
             <androidx.cardview.widget.CardView
-                android:src="@drawable/Q"
                 android:layout_width="50dp"
-                android:layout_height="50dp"/>
+                android:layout_height="50dp"
+                android:src="@drawable/qqqw">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/qqqw" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
-                android:text="朋友圈"
-
-
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="朋友圈" />
 
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/share_qq"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_weight="1.0"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
             <androidx.cardview.widget.CardView
-                android:src="@drawable/Qi"
                 android:layout_width="50dp"
-                android:layout_height="50dp"/>
+                android:layout_height="50dp"
+                android:src="@drawable/qiii">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/qiii" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
-                android:text="QQ好友"
-
-
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="QQ好友" />
 
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/share_qzone"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_weight="1.0"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
             <androidx.cardview.widget.CardView
-                android:src="@drawable/K"
                 android:layout_width="50dp"
-                android:layout_height="50dp"/>
+                android:layout_height="50dp"
+                android:src="@drawable/kongjian">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/kongjian" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
-                android:text="QQ空间"
-
-
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="QQ空间" />
 
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/share_sina"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_weight="1.0"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
             <androidx.cardview.widget.CardView
-                android:src="@drawable/Bo"
                 android:layout_width="50dp"
-                android:layout_height="50dp"/>
+                android:layout_height="50dp"
+                android:src="@drawable/boo">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/boo" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
-                android:text="微博"
-
-
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="微博" />
 
         </LinearLayout>
+
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#999999"/>
+
     <TextView
         android:id="@+id/share_cancel"
-        android:text="取消"
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="取消" />
 </LinearLayout>

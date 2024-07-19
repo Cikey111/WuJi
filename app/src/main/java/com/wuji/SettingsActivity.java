@@ -1,5 +1,6 @@
 package com.wuji;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,10 +9,15 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDialog;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
+
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.wuji.view.AccountActivity;
 import com.wuji.view.ExitActivity;
 import com.wuji.view.FunctionActivity;
@@ -28,6 +34,8 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
+
+
 //        getSupportFragmentManager()
 //                .beginTransaction()
 //                .replace(R.id.settings, new SettingsFragment())
@@ -38,8 +46,26 @@ public class SettingsActivity extends AppCompatActivity {
 //        }
     }
 
+    @Override
+    protected Dialog onCreateDialog(int id) {
+        return super.onCreateDialog(id);
+    }
 
+    public static class dialog extends BottomSheetDialogFragment{
 
+        @NonNull
+        @Override
+        public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
+            return super.onCreateDialog(savedInstanceState);
+
+        }
+
+        @Nullable
+        @Override
+        public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+            return inflater.inflate(R.layout.activity_share,container,false);
+        }
+    }
 
     public static class SettingsFragment extends PreferenceFragmentCompat {
         @Override
@@ -96,7 +122,12 @@ public class SettingsActivity extends AppCompatActivity {
             share.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
-                    startActivity(new Intent(getActivity(), ShareActivity.class));
+//                    startActivity(new Intent(getActivity(), ShareActivity.class));
+//                    BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this,R.style.BottomSheetDialog);
+
+                    dialog dialog = new dialog();
+                    dialog.show(getChildFragmentManager(),"1");
+
                     return false;
                 }
             });
