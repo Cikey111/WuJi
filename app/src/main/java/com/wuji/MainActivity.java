@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private Button passer;
     private ImageButton mine;
-
+    private BottomNavigationView ExitView;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -37,7 +37,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         replaceFragment(HomeFragment.newInstance(null,null));
         NavView = (BottomNavigationView)findViewById(R.id.nav_view);
-        
+        ExitView =(BottomNavigationView )findViewById ( R.id.eixt_view ) ;
+        ExitView.setOnNavigationItemSelectedListener ( new BottomNavigationView.OnNavigationItemSelectedListener ( ) {
+            @Override
+            public boolean onNavigationItemSelected( @NonNull MenuItem item ) {
+                return false;
+            }
+        } );
         NavView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener(){
 
             @Override

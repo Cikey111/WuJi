@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/WuJi/WuJi/app/src/main/res/layout/activity_exit.xml" value="0.175" />
+        <entry key="..\:/AndroidStudioProjects/WuJi/WuJi/app/src/main/res/layout/activity_main.xml" value="0.175" />
+        <entry key="..\:/AndroidStudioProjects/WuJi/WuJi/app/src/main/res/layout/activity_share.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/WuJi/WuJi/app/src/main/res/layout/settings_activity.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
